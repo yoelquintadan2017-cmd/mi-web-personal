@@ -1,73 +1,45 @@
-import Link from "next/link";
-
-export default function Home() {
+export default function ProyectosPage() {
   return (
-    <main
-      className="min-h-screen bg-cover bg-center bg-no-repeat text-white"
-      style={{ backgroundImage: "url('/fondo.png')" }}
-    >
-      <div className="min-h-screen bg-black/65">
-        <header className="w-full border-b border-white/10">
-          <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-            <h1 className="text-xl font-bold">Mi Web Personal</h1>
+    <main className="min-h-screen bg-slate-950 text-white px-6 py-20">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-4xl font-bold mb-10">Mis proyectos</h1>
 
-            <div className="flex gap-4 text-sm">
-              <Link href="/" className="hover:text-blue-300 transition">
-                Inicio
-              </Link>
-              <Link href="/sobre-mi" className="hover:text-blue-300 transition">
-                Sobre mí
-              </Link>
-              <Link href="/proyectos" className="hover:text-blue-300 transition">
-                Proyectos
-              </Link>
-              <Link href="/contacto" className="hover:text-blue-300 transition">
-                Contacto
-              </Link>
-            </div>
-          </nav>
-        </header>
+        <section className="relative overflow-hidden rounded-3xl border border-white/10 min-h-[500px] flex items-center">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/videos/manos-python.mp4" type="video/mp4" />
+          </video>
 
-        <section className="max-w-6xl mx-auto px-6 py-20 min-h-[85vh] flex items-center">
-          <div className="grid md:grid-cols-2 gap-12 items-center w-full">
-            <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-white/70 mb-4">
-                Sitio personal
-              </p>
+          <div className="absolute inset-0 bg-black/60" />
 
-              <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-                Hola, soy Yoel Adan Q.
-              </h2>
+          <div className="relative z-10 p-10 md:p-14 max-w-2xl">
+            <p className="text-sm uppercase tracking-[0.3em] text-cyan-300 mb-4">
+              Proyecto destacado
+            </p>
 
-              <p className="text-lg text-white/90 leading-8 max-w-xl mb-8">
-                Bienvenido a mi espacio personal. Aquí compartiré mis proyectos,
-                fotos, videos, ideas, publicaciones y parte de mi crecimiento
-                profesional y creativo.
-              </p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Proyecto Manos con Python
+            </h2>
 
-              <div className="flex gap-4 flex-wrap">
-                <Link
-                  href="/proyectos"
-                  className="px-6 py-3 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition"
-                >
-                  Ver proyectos
-                </Link>
+            <p className="text-lg text-white/90 leading-8 mb-8">
+              Un proyecto visual e interactivo donde exploro Python, visión por
+              computadora y efectos tecnológicos para crear experiencias más
+              llamativas y dinámicas.
+            </p>
 
-                <Link
-                  href="/sobre-mi"
-                  className="px-6 py-3 rounded-2xl border border-white font-semibold hover:bg-white hover:text-black transition"
-                >
-                  Conóceme
-                </Link>
-              </div>
-            </div>
+            <div className="flex gap-4 flex-wrap">
+              <button className="px-6 py-3 rounded-2xl bg-white text-black font-semibold">
+                Ver detalles
+              </button>
 
-            <div className="flex justify-center md:justify-end">
-              <img
-                src="/foto-perfil.png"
-                alt="Foto de perfil"
-                className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-3xl border border-white/20 shadow-2xl"
-              />
+              <button className="px-6 py-3 rounded-2xl border border-white font-semibold">
+                Ver código
+              </button>
             </div>
           </div>
         </section>
