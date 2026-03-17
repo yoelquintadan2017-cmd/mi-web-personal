@@ -4,7 +4,7 @@ export default function ContactoPage() {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-6">Contacto</h1>
         <p className="text-lg text-white/80 leading-8">
-          Esta sección servirá para que luego agregues tu correo, redes sociales, ect.
+          Esta sección servirá para que luego agregues tu telefono, redes sociales, ect.
         </p>
       </div>
     </main>
