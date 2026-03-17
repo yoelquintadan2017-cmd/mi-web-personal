@@ -32,3 +32,7 @@ export default function RootLayout({
     </html>
   );
 }
+export const metadata = {
+  title: "Mi Web Personal | Yoel Adan Q.",
+  description: "Sitio personal de Yoel Adan Q. con proyectos, fotos, videos y publicaciones.",
+};
