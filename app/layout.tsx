@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Mi Web Personal | Yoel Adan Q.",
-  description: "Sitio personal de Yoel Adan Q. con proyectos, fotos, videos y publicaciones.",
+  description: "Sitio personal de Yoel Adan Q. con proyectos, fotos, videos y publicaciones, entre otros.",
 };
 
 export default function RootLayout({
